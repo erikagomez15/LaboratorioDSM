@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_sueldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Sueldo" />
+
+    <EditText
+        android:id="@+id/et_sueldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:layout_below="@+id/tv_sueldo"
+        android:inputType="numberSigned" />
+
+    <TextView
+        android:id="@+id/tv_anios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_sueldo"
+        android:layout_weight="1"
+        android:text="Años" />
+
+    <EditText
+        android:id="@+id/et_anios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/tv_anios"
+        android:inputType="numberSigned" />
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_anios"
+        android:onClick="MainActivity2"
+        android:text="Calcular" />
+</RelativeLayout>
